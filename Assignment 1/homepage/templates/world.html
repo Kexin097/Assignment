@@ -1,0 +1,25 @@
+import time
+from selenium import webdriver
+from bs4 import BeautifulSoup
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+{% extends "layout.html" %}
+
+
+{% block content %}
+<section class="hero">
+    <h1>World Population</h1>
+</section>
+
+<h3>World Population by Year</h2>
+
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver.get('https://www.worldometers.info/world-population/world-population-by-year/')
+    
+    time.sleep(1)
+
+    world_population_table = driver.find_element_by_xpath(r'/html/body/div[3]/div[2]/div[1]/table')
+
+
+{% endblock %}
