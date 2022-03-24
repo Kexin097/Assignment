@@ -55,10 +55,16 @@ def malaysia(request):
         row = [i.text for i in row_data]
         length = len(malaysia_pop_table)
         malaysia_pop_table.loc[length] = row
+    #context = dict(malaysia_pop_table.values)
+    context = { "data": malaysia_pop_table.to_html() }
 
-    return render(request, "malaysia.html", malaysia_pop_table)
 
+    #print(context)
+    print(malaysia_pop_table.to_html())
 
+    return render(request, "malaysia.html", context)
+    # HttpResponse(malaysia_pop_table.to_html())
+    
 
 def scrap(request):
     options = Options()
