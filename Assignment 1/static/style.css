@@ -215,3 +215,56 @@ section.prev-next a {
 section.prev-next a.next {
   text-align: right;
 }
+
+table {
+  border-collapse: collapse;
+  vertical-align: middle;
+  display : table;
+  width: 100%;
+  column-width: 50px;
+}
+table td, table th {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  /* border-bottom: 2px solid #7f7f7f; */
+}
+table thead td {
+  /* background-color: #54585d;  */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  /* border: 1px solid #54585d; */
+}
+
+table thead tr {
+  background-color: #f1f3f7;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #7f7f7f; 
+  text-align: center;  
+}
+
+table tbody td {
+  color: #636363;
+  text-align: center;
+  /* border: 1px solid #dddfe1; */
+}
+table tbody tr {
+  /* background-color: #f9fafb; */
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  font-size: 13px;
+  text-align: center;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  font-size: 13px;
+  text-align: center;
+}
