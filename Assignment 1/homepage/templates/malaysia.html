@@ -1,11 +1,43 @@
 {% extends "layout.html" %}
+{% load static %}
 
 {% block content %}
 <section class="hero">
     <h2>Malaysia Population</h2>
 </section>
 
+<section class="project"></section>
+<figure>
+    <img src = "{% static 'malaysia.png' %}">
+    <br>
+    <p>
+        - The current population of Malaysia is 33,079,368 as of March 24, 2022, based on Worldometer elaboration of the latest United Nations data.
+        <br>
+        - Malaysia 2020 population is estimated at 32,365,999 people at mid year according to UN data.
+        <br>
+        - Malaysia population is equivalent to 0.42% of the total world population.
+        <br>
+        - Malaysia ranks number 45 in the list of countries (and dependencies) by population.
+        <br>
+        - The population density in Malaysia is 99 per Km2 (255 people per mi2).
+        <br>
+        - The total land area is 328,550 Km2 (126,854 sq. miles).
+        <br>
+        - 78.4 % of the population is urban (25,361,963 people in 2020).
+        <br>
+        - The median age in Malaysia is 30.3 years.
+    </p>
+</figure>    
+
+
+<h4>Population of Malaysia (2020 and Historical)</h4>
+<br>
+
 {{data | safe}}
+
+<br>
+
+{{chart}}
 
 {% endblock %}
 
