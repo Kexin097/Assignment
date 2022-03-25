@@ -130,19 +130,24 @@ h2 a {
 h3 {
   font-size: var(--h3-size);
   font-variation-settings: "wght" 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 0 0 24px 0;
 }
 
 h4 {
-  font-size: var(--h4-size);
-  font-variation-settings: "wght" 500;
-  text-transform: uppercase;
-  margin: 0 0 4px 0;
+  /* font-size: var(--h4-size); */
+  /* font-variation-settings: "wght" 500; */
+  font-weight: bold;
+  font-variant: normal;
+  text-align: center;
+  text-transform: capitalize;
+  /* text-transform: uppercase; */
+  /* margin: 0 0 4px 0; */
 }
 
 p {
-  margin: 0 0 24px 0;
+  /* margin: 0 0 24px 0; */
+  font-size: 16px;
 }
 
 p:last-child {
@@ -267,4 +272,11 @@ table tbody tr:nth-child(even) {
   border-color: inherit;
   font-size: 13px;
   text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
